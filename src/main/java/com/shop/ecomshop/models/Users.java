@@ -18,10 +18,15 @@ public class Users {
     //default constructor
     public  Users() {}
     //overridden constructor with email,username & password
-    public Users(String userName, String email, String password) {
+    public Users(String userName, String email, String password,String address, String city,
+     String country) {
         this.userName = userName;
         this.email = email;
         this.password = password;
+        this.address = address;
+        this.city = city;
+        this.country = country;
+
     }
     //setters and getters for the given properties
     @Id

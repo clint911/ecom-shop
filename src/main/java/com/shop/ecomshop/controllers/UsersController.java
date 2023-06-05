@@ -1,6 +1,6 @@
 package com.shop.ecomshop.controllers;
+
 import com.shop.ecomshop.exception.ResourceNotFoundException;
-import com.shop.ecomshop.models.Employee;
 import com.shop.ecomshop.models.Users;
 import com.shop.ecomshop.repositories.UsersRepository;
 import jakarta.validation.Valid;
@@ -42,9 +42,9 @@ public class UsersController {
    users.setUserName(usersDetails.getUserName());
    users.setEmail(usersDetails.getEmail());
    users.setPassword(usersDetails.getPassword());
-   /* You need to add the other fields here and to the constructor too so that on addition,
-   a whole user will be constructed in a way that reflects the models that constitutes our
-   database */
+   users.setAddress(usersDetails.getAddress());
+   users.setCity(usersDetails.getCity());
+   users.setCountry(usersDetails.getCountry());
 
    final Users updatedUsers = usersRepository.save(users);
    return ResponseEntity.ok(updatedUsers);
