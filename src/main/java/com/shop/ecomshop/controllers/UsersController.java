@@ -3,7 +3,9 @@ package com.shop.ecomshop.controllers;
 import com.shop.ecomshop.exception.ResourceNotFoundException;
 import com.shop.ecomshop.models.Users;
 import com.shop.ecomshop.repositories.UsersRepository;
+
 import jakarta.validation.Valid;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
