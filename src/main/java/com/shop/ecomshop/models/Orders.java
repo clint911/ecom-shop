@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 @Table(name = "orders")
 public class Orders {
     private  long orderId;
-    private long userId;//foreign key
+   // private long userId;//TODO: set this to the foreign key
 
     private long noOfProducts;
     private long totalPrice;
@@ -66,4 +66,10 @@ public class Orders {
     public void setProductsOrdered(String productsOrdered){this.productsOrdered =
             productsOrdered;}
    //if does not work check Users class kindly
+    //long noOfProducts, long totalPrice, String orderStatus, String date,
+    //                   String productsOrdered
+    @Override
+    public String toString() {
+        return "Order [id=" + orderId + ", noOfProducts=" + noOfProducts + ", totalPrice=" + totalPrice + ", orderStatus=" + orderStatus + ", date=" + date + ", productsOrdered" + productsOrdered + "]";
+    }
 }

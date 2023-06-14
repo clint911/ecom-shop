@@ -54,4 +54,10 @@ public class Users {
 
     //I saw an ovverride somewhere, if shit doesn't work look for the employees models file
     // and try sth similar
+    @Override
+    public String toString() {
+        return "Users [id=" + userId + ", username=" + userName + ", email=" + email + ", " +
+                "password=" + password + ", address=" + address + ", city=" + city  +
+                ", country=" + country + "]";
+    }
 }

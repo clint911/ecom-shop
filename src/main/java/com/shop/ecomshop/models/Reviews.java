@@ -42,4 +42,8 @@ public class Reviews {
     public String getDateOfReview(){return  dateOfReview;}
     public void setDateOfReview(String dateOfReview) {this.dateOfReview = dateOfReview;}
     //if err check user class
+    @Override
+    public String toString() {
+        return "Reviews [id=" + reviewId + ", productId=" + productId + ", userId=" + userId + ", productRating=" + productRating + ", textContent=" + textContent + ", dateOfReview=" + dateOfReview + "]";
+    }
 }

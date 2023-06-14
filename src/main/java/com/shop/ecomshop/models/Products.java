@@ -57,6 +57,11 @@ public class Products {
     }
     //if doesn't work, check the UsersControllers for some comments I added from them
     // employee controllers
+    //long price, String productName, String description, String imageUrl
+    @Override
+    public String toString() {
+        return "Products [id=" + productId + ", price=" + price + ", productName=" + productName + ", description" + description + ", imageUrl" + imageUrl + "]";
+    }
 
 
 }
