@@ -15,7 +15,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 @RestController
-@RequestMapping("/reviews")
+@RequestMapping("/reviewsApi")
 public class ReviewsController {
     @Autowired
     private ReviewsRepository reviewsRepository;

@@ -13,7 +13,7 @@ import java.util.List;
 import java.util.Map;
 
 @RestController
-@RequestMapping("/products")
+@RequestMapping("/productsApi")
 public class ProductsController {
     @Autowired
     private ProductsRepository productsRepository;
